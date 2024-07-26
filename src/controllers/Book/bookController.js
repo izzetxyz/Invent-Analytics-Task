@@ -68,7 +68,7 @@ const borrowBook = async (req, res) => {
             $set: { isBorrowed: true },
           }
         );
-        res.status(201).send('Book borrowed successfully');
+        res.status(200).send('Book borrowed successfully');
       }
 
     }
